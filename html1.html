@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling Universe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الخلفية المتحركة -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- أضف هذا في شريط التنقل -->
+<div class="language-switcher">
+    <button class="lang-btn active" data-lang="ar">العربية</button>
+    <button class="lang-btn" data-lang="en">English</button>
+    <!-- يمكنك إضافة المزيد من اللغات لاحقًا -->
+</div>
+    <!-- شريط التنقل -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="https://i.imgur.com/JqYeZvn.png" alt="Solo Leveling Logo">
+            <span>عالم الصيادين</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active" data-section="characters">الشخصيات</a></li>
+            <li><a href="#" data-section="system">النظام</a></li>
+            <li><a href="#" data-section="gallery">المعرض</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم الشخصيات -->
+    <section id="characters" class="section active-section">
+        <div class="character-viewer">
+            <div class="character-container">
+                <!-- الشخصيات ستضاف ديناميكياً بواسطة JavaScript -->
+            </div>
+            
+            <div class="character-controls">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="character-thumbnails">
+                    <!-- الصور المصغرة ستضاف ديناميكياً -->
+                </div>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأقسام الأخرى -->
+    <section id="system" class="section"></section>
+    <section id="gallery" class="section"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
